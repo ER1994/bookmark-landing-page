@@ -1,1 +1,30 @@
 @use 'variables' as *;
+
+html {
+  font-family: $font-family-Rubik;
+}
+
+.headers-large {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-xl;
+  line-height: $line-height-regular;
+}
+
+.headers-small {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+}
+
+.paragraphs {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  color: $grey-600;
+  text-align: center;
+}
+
+.dotted-border {
+  border-bottom: 1px dotted $grey-600;
+  padding-bottom: $spacing-100;
+}
