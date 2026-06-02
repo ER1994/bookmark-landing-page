@@ -8,6 +8,7 @@ html {
   font-weight: $font-weight-medium;
   font-size: $font-size-xl;
   line-height: $line-height-regular;
+  text-align: center;
 }
 
 .headers-small {
@@ -22,6 +23,16 @@ html {
   line-height: $line-height-medium;
   color: $grey-600;
   text-align: center;
+}
+
+.newsletter__description {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-regular;
+  line-height: $line-height-xl;
+  letter-spacing: $letter-spacing-large;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .dotted-border {

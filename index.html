@@ -220,17 +220,20 @@
             More Info
         </button>
     </section>
-    <section class="newsletter">
-        <p class="newsletter__description">
-            35,000+ already joined
-        </p>
+    <section class="text-bg-primary p-3 container-fluid d-flex flex-column align-items-center gap-4">
+        <div>
+            <p class="newsletter__description">
+                35,000+ already joined
+            </p>
 
-        <h2 class="headers-large">
-            Stay up-to-date with what we’re doing
-        </h2>
-        <form class="newsletter__form">
-            <input class="newsletter__input" placeholder="Enter your email address" type="email">
-            <button class="button button--info newsletter__button" type="submit">
+            <h2 class="headers-large">
+                Stay up-to-date with what we’re doing
+            </h2>
+        </div>
+        <form class="newsletter__form container-fluid d-flex flex-column align-items-center gap-2">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input class="form-control" placeholder="Enter your email address" type="email" id="email">
+            <button class="container-fluid btn btn-danger mb-3" type="submit">
                 Contact Us
             </button>
         </form>
