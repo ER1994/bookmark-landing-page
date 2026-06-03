@@ -39,3 +39,13 @@ html {
   border-bottom: 1px dotted $grey-600;
   padding-bottom: $spacing-100;
 }
+
+.footer-link:active,
+.footer-link:hover {
+  color: $red !important;
+}
+
+.footer-social-link:active path,
+.footer-social-link:hover path{
+  fill: $red;
+}
