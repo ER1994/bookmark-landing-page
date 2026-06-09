@@ -25,6 +25,19 @@ html {
   text-align: center;
 }
 
+a.nav-link.nav-elements {
+  color: $grey-600 !important;
+}
+
+a.nav-link.nav-login {
+  background-color: $red;
+  color: $white !important;
+  border: 2px solid $red;
+  border-radius: 4px;
+  padding: $spacing-100 $spacing-300;
+  text-transform: uppercase;
+}
+
 .newsletter__description {
   font-weight: $font-weight-medium;
   font-size: $font-size-regular;
@@ -40,6 +53,37 @@ html {
   padding-bottom: $spacing-100;
 }
 
+.faq_list {
+  width: 100%;
+  max-width: 540px;
+}
+
+.faq-item {
+  border-bottom: 1px solid $grey-600;
+  padding: $spacing-200 0;
+}
+
+.faq__question {
+  width: 100%;
+  list-style: none;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $spacing-100;
+}
+
+.faq__answer {
+  font-weight: $font-weight-light;
+  font-size: $font-size-medium;
+  line-height: $line-height-large;
+  color: $blue-950;
+  padding-top: $spacing-200;
+}
+
 .footer-link:active,
 .footer-link:hover {
   color: $red !important;
@@ -48,4 +92,27 @@ html {
 .footer-social-link:active path,
 .footer-social-link:hover path{
   fill: $red;
+}
+
+.faq__question:hover p,
+.faq__question:active p{
+  color: $red !important;
+}
+
+.faq__question:hover .faq__icon,
+.faq__question:active .faq__icon {
+  color: $red;
+}
+
+.faq-item[open] svg {
+  transform: rotate(180deg);
+}
+
+.faq-item[open] svg path {
+  stroke: $red;
+}
+
+.feature-list-item:active,
+.feature-list-item:hover {
+  color: $red !important;
 }
